@@ -11,12 +11,15 @@ class Person
      if person.class != Person
       raise PartnerError
     else
-    
-    person.partner = self
-    
-    
+     person.partner = self
     
   end
+  
+  
+  
+  class PartnerError < StandardError
+  end
+end
 
 end
 
